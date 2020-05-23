@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Technical Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="sidebar" id="navbar">
+        <header>Python Foundation</header>
+        <a class="nav-link" class="active" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Python_Variables">Python Variables</a>
+        <a class="nav-link" href="#Python_Data_Types">Python Data Types</a>
+        <a class="nav-link" href="#Python_Collections">Python Collections</a>
+        <a class="nav-link" href="#Python_Lists">Python Lists</a>
+        <a class="nav-link" href="#Python_Tuples">Python Tuples</a>
+    </nav>
+    
+    <main class="main-doc" id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <div class="section-content">
+                <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+
+                <p>It is used for:</p>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Scripting/Automation</li>
+                    <li>Machine Learning/AI</li>
+                    <li>Mathematics/Computations</li>
+                </ul>
+                </div>
+        </section>
+
+        <section class="main-section" id="Python_Variables">
+            <header>Python Variables</header>
+
+            <div class="section-content">
+                <p>Variables are containers for storing data values.</p>
+                <p>Unlike other programming languages, Python has no command for declaring a variable.</p>
+                <p>A variable is created the moment you first assign a value to it.</p>
+
+                <code class="code-section">x = 5;
+y = 'Hello World';</code>
+            </div>  
+        </section>
+
+        <section class="main-section" id="Python_Data_Types">
+            <header>Python Data Types</header>
+
+            <div class="section-content">
+                <p>In programming, data type is an important concept. Variables can store data of different types, and different types can do different things.</p>
+
+                <p>Python has the following data types built-in by default, in these categories:</p>
+
+                <ul>
+                    <li>Text Type:	    str</li>
+                    <li>Numeric Types:	int, float, complex</li>
+                    <li>Sequence Types:	list, tuple, range</li>
+                    <li>Mapping Type:	dict</li>
+                    <li>Set Types:	    set, frozenset</li>
+                    <li>Boolean Type:	bool</li>
+                    <li>Binary Types:	bytes, bytearray, memoryview</li>
+                </ul>
+
+                <code class="code-section">x = 5;
+print(type(x))
+==> class 'int'</code>
+
+            </div>
+        </section>
+
+        <section class="main-section" id="Python_Collections">
+            <header>Python Collections</header>
+            <div class="section-content">
+                <p>There are four collection data types in the Python programming language:</p>
+
+                <ul>
+                    <li><strong>List</strong> is a collection which is ordered and changeable. Allows duplicate members.</li>
+                    <li><strong>Tuple</strong> is a collection which is ordered and unchangeable. Allows duplicate members.</li>
+                    <li><strong>Set</strong> is a collection which is unordered and unindexed. No duplicate members.</li>
+                    <li><strong>Dictionary</strong> is a collection which is unordered, changeable and indexed. No duplicate members.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="main-section" id="Python_Lists">
+            <header>Python Lists</header>
+            <div class="section-content">
+                <p>A list is a collection which is ordered and changeable. In Python lists are written with square brackets.</p>
+
+                <code class="code-section">thislist = ["apple", "banana", "cherry"]
+print(thislist)
+==> ['apple', 'banana', 'cherry']</code>
+               
+                <p>You access the list items by referring to the index number:</p>
+                
+                <code class="code-section">thislist = ["apple", "banana", "cherry"]
+print(thislist[1])
+==> banana</code>
+
+            </div>
+        </section>        
+
+        <section class="main-section" id="Python_Tuples">
+            <header>Python Tuples</header>
+            <div class="section-content">
+                <p>A tuple is a collection which is ordered and unchangeable. In Python tuples are written with round brackets.</p>
+
+                <code class="code-section">thistuple = ("apple", "banana", "cherry")
+print(thistuple)
+==> ('apple', 'banana', 'cherry')</code>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>

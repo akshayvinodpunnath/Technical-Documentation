@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: snow;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  border-right: solid;
+}
+
+.sidebar header {
+  font-weight: bold;
+}
+
+.sidebar header,a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a {
+  border-top: 1px solid;
+}
+ 
+.sidebar a.active {
+  background-color: rgb(76, 130, 175);
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+main.main-doc {
+  margin-left: 200px;
+  padding: 1px 16px;
+  padding-top: 20px;
+  height: 1000px;
+}
+
+main.main-doc header {
+  font-weight: bold;
+}
+
+div.section-content {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+code.code-section{
+  display: block;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  margin-left: 20px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  main.main-doc {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
